@@ -4,7 +4,6 @@ import { Outlet } from 'react-router-dom';
 import { fetchAuthors, getAllPosts } from '../API/request';
 import Header from '../components/Header';
 import SideBar from '../components/SideBar';
-import SignUp from '../pages/register/SignUp';
 
 const RootLayout = () => {
     const dispatch = useDispatch();
