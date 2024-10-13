@@ -26,7 +26,7 @@ const PostDetail = () => {
         navigate('/')
     }
     return (
-        <div className='dark:bg-black overflow-y-auto py-[1vw] max-sm:py-[2vw] dark:text-white w-[100vw] h-[90vh] max-sm:h-[92vh] px-[3vw]'>
+        <div className='dark:bg-black overflow-y-auto py-[1vw] max-sm:py-[2.2vw] dark:text-white w-[100vw] h-[90vh] max-sm:h-[92vh] px-[3vw]'>
             <div className="flex items-center gap-[1vw]">
                 <button onClick={() => Home()} className="w-[3vw] h-[3vw] max-sm:w-[10vw] max-sm:h-[10vw] my-[1vw] border-[.1vw] active:scale-95 shadow-md rounded-full flex justify-center items-center text-[2vw] max-sm:text-[5vw] font-bold"><BsArrowLeftShort /></button>
                 <div className='flex items-center gap-[1vw] dark:border-black py-[.5vw] max-sm:py-[2vw]'>
