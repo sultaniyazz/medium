@@ -29,7 +29,7 @@ const Header = () => {
     }, [darkModeData]);
 
     return (
-        <div className='w-[100vw] z-10 h-[10vh] max-sm:h-[8vh] dark:bg-black dark:text-white border-b-[.1vw] dark:border-b-ligthBlack dark:border-lightBlack flex justify-between items-center px-[5vw]'>
+        <div className='w-[100vw] z-10 h-[10vh] max-sm:h-[8vh] bg-red-500 dark:bg-black dark:text-white border-b-[.1vw] dark:border-b-ligthBlack dark:border-lightBlack flex justify-between items-center px-[5vw]'>
             <button onClick={() => dispatch(reload())} className="text-[2vw] font-serif max-sm:text-[4vw] font-bold flex justify-center items-center gap-[.3vw]">
                 <img className="w-[2.5vw] max-sm:w-[7vw]" src={logo} alt="Logo" />
                 Medium
