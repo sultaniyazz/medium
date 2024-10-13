@@ -22,7 +22,7 @@ export const getAllPosts = (url) => {
 
 // try {
 //   const res = await axios.delete(
-//     `${"https://posts-db.onrender.com/posts"}/${17}`
+//     `${"https://posts-db.onrender.com/posts"}/${11}`
 //   );
 // } catch (err) {
 //   console.log(err);
