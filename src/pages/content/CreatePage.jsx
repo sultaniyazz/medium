@@ -45,14 +45,14 @@ const CreatePage = () => {
                         <div className='flex flex-col'>
                             <div className='flex flex-col gap-[.5vw]'>
                                 <label htmlFor="title" className='font-semibold text-[1.5vw] max-sm:text-[4vw] font-mono'>Title</label>
-                                <input onChange={props.handleChange} name='title' id='title' className='border-[.1vw] border-gray-400 dark:bg-ligthBlack dark:border-gray-500 w-full outline-none py-[.8vw] max-sm:py-[3vw] px-[2vw] max-sm:placeholder:text-[3vw] max-sm:text-[2vw] rounded-[.5vw]' type="text" placeholder='Enter the title' />
+                                <input onChange={props.handleChange} name='title' id='title' className='border-[.1vw] border-gray-400 dark:bg-ligthBlack dark:border-gray-500 w-full outline-none py-[.8vw] max-sm:py-[3vw] px-[2vw] max-sm:placeholder:text-[3vw] max-sm:text-[3vw] rounded-[.5vw]' type="text" placeholder='Enter the title' />
                             </div>
                             {props.errors.title && props.touched.title && <span className='text-red-500'>{props.errors?.title}</span>}
                         </div>
                         <div className='flex flex-col'>
                             <div className='flex flex-col gap-[.5vw]'>
                                 <label htmlFor="excerpt" className='font-semibold text-[1.5vw] max-sm:text-[4vw] font-mono '>Excerpt</label>
-                                <textarea onChange={props.handleChange} name='excerpt' id='excerpt' className='border-[.1vw] border-gray-400 h-[15vw] max-sm:h-[25vw] resize-none dark:bg-ligthBlack dark:border-gray-500 w-full outline-none py-[.8vw] max-sm:py-[3vw] px-[2vw] max-sm:placeholder:text-[3vw] max-sm:text-[2vw] rounded-[.5vw]' type="text" placeholder='Enter the excerpt' />
+                                <textarea onChange={props.handleChange} name='excerpt' id='excerpt' className='border-[.1vw] border-gray-400 h-[15vw] max-sm:h-[25vw] resize-none dark:bg-ligthBlack dark:border-gray-500 w-full outline-none py-[.8vw] max-sm:py-[3vw] px-[2vw] max-sm:placeholder:text-[3vw] max-sm:text-[3vw] rounded-[.5vw]' type="text" placeholder='Enter the excerpt' />
                             </div>
                             {props.errors.excerpt && props.touched.excerpt && <span className='text-red-500'>{props.errors?.excerpt}</span>}
                         </div>
@@ -66,7 +66,7 @@ const CreatePage = () => {
                         <div className='flex flex-col'>
                             <div className='flex flex-col gap-[.5vw]'>
                                 <label htmlFor="image" className='font-semibold text-[1.5vw] max-sm:text-[4vw] font-mono '>Image</label>
-                                <input onChange={props.handleChange} name='image' id='image' className='border-[.1vw] border-gray-400 dark:bg-ligthBlack dark:border-gray-500 w-full outline-none py-[.8vw] max-sm:py-[3vw] px-[2vw] max-sm:placeholder:text-[3vw] max-sm:text-[2vw] rounded-[.5vw]' type="text" placeholder='Image url' />
+                                <input onChange={props.handleChange} name='image' id='image' className='border-[.1vw] border-gray-400 dark:bg-ligthBlack dark:border-gray-500 w-full outline-none py-[.8vw] max-sm:py-[3vw] px-[2vw] max-sm:placeholder:text-[3vw] max-sm:text-[3vw] rounded-[.5vw]' type="text" placeholder='Image url' />
                             </div>
                             {props.errors.image && props.touched.image && <span className='text-red-500'>{props.errors?.image}</span>}
                         </div>
