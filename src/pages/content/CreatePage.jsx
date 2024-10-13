@@ -33,6 +33,7 @@ const CreatePage = () => {
                 try {
                     const res = await axios.post('https://posts-db.onrender.com/posts', { ...values, slug: convertToSlug(values.title), authorId: +values.authorId })
                     resetForm()
+                    window.location.reload();
                 } catch (err) {
                     console.log(err);
 

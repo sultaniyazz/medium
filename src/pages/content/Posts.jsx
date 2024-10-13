@@ -17,12 +17,12 @@ const Posts = () => {
     return (
         <div className='flex flex-col w-[75%] max-sm:w-[100%] p-[1vw] overflow-y-auto'>
             {loading ? (
-                <div className='h-full text-[1.3vw] flex justify-center gap-[.4vw] items-center'>
+                <div className='h-full text-[1.3vw] max-sm:text-[5vw] flex justify-center gap-[.4vw] max-sm:gap-[1vw] items-center'>
                     <h1 className="dark:text-white">Loading</h1>
                     <span className="animate-spin"><FaSpinner className="dark:text-white" /></span>
                 </div>
             ) : (
-                <div className="flex flex-col gap-[.5vw]">
+                <div className="flex flex-col gap-[.5vw] max-sm:gap-[1vw]">
                     {filtered.length > 0 ? filtered.map((post) => (
                         <PostCard post={post} />
                     )) : postsData.map((post) => (

@@ -15,18 +15,18 @@ const PostCard = ({ post }) => {
     }
     return (
         <Link key={post.id} to={`/posts/${post.slug}`} className='border-[.1vw] rounded-[.5vw] dark:bg-ligthBlack dark:border-black dark:text-white hover:dark:bg-hoverBlack hover:bg-gray-100 p-[.5vw] flex items-center justify-between'>
-            <div className='w-[70vw] h-full'>
+            <div className='w-[70vw] max-sm:w-[90vw] h-full'>
                 <div className='flex items-center gap-[.5vw] border-b-[.1vw] dark:border-black py-[.5vw]'>
-                    <img className='rounded-full w-[2.5vw] h-[2.5vw] max-sm:w-[6vw] max-sm:h-[6vw] object-cover' src={img(post.authorId)} alt="Author Avatar" />
-                    <h1 className='font-bold max-sm:text-[2.4vw]'>{nameAuthor(post.authorId)}</h1>
+                    <img className='rounded-full w-[2.5vw] h-[2.5vw] max-sm:w-[7vw] max-sm:h-[7vw] object-cover' src={img(post.authorId)} alt="Author Avatar" />
+                    <h1 className='font-bold max-sm:text-[3vw]'>{nameAuthor(post.authorId)}</h1>
                 </div>
                 <div className='py-[.5vw] px-[.5vw]'>
-                    <h1 className="font-semibold py-[.1vw] max-sm:text-[2.4vw]">{post.title}</h1>
-                    <p className='max-sm:text-[1.6vw]' dangerouslySetInnerHTML={{ __html: post.excerpt }} />
+                    <h1 className="font-semibold py-[.1vw] max-sm:text-[3vw]">{post.title}</h1>
+                    <p className='max-sm:text-[2vw]' dangerouslySetInnerHTML={{ __html: post.excerpt }} />
                 </div>
             </div>
             <div className='flex justify-end h-full '>
-                <img className='w-[30vw] object-contain bg-center' src={post.image} alt="Post" />
+                <img className='w-[30vw] max-sm:w-[40vw] object-contain bg-center' src={post.image} alt="Post" />
             </div>
         </Link>
     )
